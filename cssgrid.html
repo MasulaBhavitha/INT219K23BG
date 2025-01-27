@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: grey;
+            border: 5px solid black;
+            display:grid;
+            grid-template-columns: auto 20%  50%;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap:20p 30px;
+            
+            
+        }
+        .item{
+            border:2px purple dotted;
+            padding: 10px 20px 30px 40px;
+            font-size:large;
+            font-family: cursive;
+        }
+        #i3{
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            
+        }
+        #i5{
+
+            grid-column: 3/span 3;
+        }
+        #i9{
+            grid-area: 4px / 3px /span 1px/span 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item" id="i3">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item" id="i5">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item" id="i9">Item 9</div>
+    </div>
+</body>
+</html>
